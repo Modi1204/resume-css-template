@@ -1,0 +1,1839 @@
+<html>
+
+<body>
+    <div>
+        <style type="text/css" id="static">
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            font,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                vertical-align: baseline;
+                background: transparent
+            }
+
+            body {
+                line-height: 1;
+                text-align: left;
+                font-feature-settings: "liga" 0;
+                -moz-font-feature-settings: "liga" off
+            }
+
+            .skn-mlf4 table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                font-size: inherit;
+                color: inherit;
+                width: 100%
+            }
+
+            /*START content disc style for LI*/
+            .skn-mlf4 ul,
+            .skn-mlf4 li {
+                list-style: none;
+                margin: 0;
+                padding: 0
+            }
+
+            .skn-mlf4 ul li {
+                position: relative;
+                margin: 0 0 0 0px;
+                padding-left: 10px
+            }
+
+            .skn-mlf4 ul li:before {
+                content: '\2022';
+                font-size: 10px;
+                position: absolute;
+                left: 0;
+                top: 0
+            }
+
+            /*END content disc style for LI*/
+
+            /* li border */
+            .skn-mlf4 .jobline {
+                display: block;
+                position: relative;
+                margin-left: 2px
+            }
+
+            .skn-mlf4 .jobline ul li:before,
+            .skn-mlf4 .jobline p:before {
+                content: '\2022';
+                position: absolute;
+                left: -3px;
+                font-size: 10px;
+                z-index: 1;
+                display: block !important
+            }
+
+            .skn-mlf4 .experience ul {
+                position: relative
+            }
+
+            .skn-mlf4 .experience .jobline:before {
+                content: '';
+                height: calc(100% - 10px);
+                width: 5px;
+                border-left: 1px solid #2a2a2a;
+                position: absolute;
+                left: -1px;
+                top: 9px
+            }
+
+            .skn-mlf4 .experience ul li:last-child:after,
+            .skn-mlf4 .jobline p:last-child:after {
+                border-left: 4px solid #fff;
+                bottom: 0;
+                position: absolute;
+                width: 4px;
+                left: -2px;
+                top: 11px;
+            }
+
+            .skn-mlf4 .experience ul li:last-child:after,
+            .skn-mlf4 .jobline p:last-child:after {
+                content: ''
+            }
+
+            .skn-mlf4 .experience .jobline p {
+                padding-left: 10px;
+                position: relative
+            }
+
+            .skn-mlf4 .left-box .jobline {
+                margin-left: 15px
+            }
+
+            /*Helping classes*/
+            .skn-mlf4 .txt-bold {
+                font-weight: bold
+            }
+
+            .skn-mlf4 .txtItl {
+                font-style: italic
+            }
+
+            .skn-mlf4 .dispBlock {
+                display: block
+            }
+
+            .skn-mlf4 .flt-right {
+                float: right
+            }
+
+            .skn-mlf4 .brkall {
+                word-break: break-all
+            }
+
+            /*Document*/
+            .skn-mlf4 {
+                color: #020303;
+                line-height: 13px;
+                min-height: 792px;
+                word-wrap: break-word
+            }
+
+            .skn-mlf4 .name {
+                font-weight: bold;
+                padding: 0;
+                text-align: left
+            }
+
+            .skn-mlf4 .resumeTitle {
+                text-transform: uppercase;
+                letter-spacing: .42px
+            }
+
+            .skn-mlf4 .paragraph.firstparagraph {
+                margin-top: 0
+            }
+
+            /* common left-right container */
+            .skn-mlf4 .section {
+                position: relative
+            }
+
+            .skn-mlf4 .section .heading {
+                border-top: 2px solid #0187de;
+                padding-top: 5px;
+                padding-bottom: 5px
+            }
+
+            .skn-mlf4 .sectiontitle {
+                text-transform: uppercase;
+                font-weight: bold
+            }
+
+            .skn-mlf4 .left-box,
+            .skn-mlf4 .right-box {
+                box-sizing: border-box;
+                position: relative;
+                padding: 30px;
+                display: table-cell;
+                vertical-align: top;
+                padding-top: 25px
+            }
+
+            .skn-mlf4 .left-box {
+                padding-right: 0px
+            }
+
+            .skn-mlf4 .topbg {
+                position: absolute;
+                height: 265px;
+                width: 265px;
+                top: 0;
+                left: 0
+            }
+
+            .skn-mlf4 .topbg svg {
+                height: inherit;
+                width: inherit
+            }
+
+            .skn-mlf4 .topbg svg path {
+                fill: #0187de;
+                opacity: .17
+            }
+
+            .skn-mlf4 .right-box .skill {
+                display: table;
+                width: 100%;
+                table-layout: fixed
+            }
+
+            .skn-mlf4 .right-box .skill .paddedline {
+                display: table-cell;
+                width: 50%
+            }
+
+            .skn-mlf4 .right-box .skill .paddedline:last-child {
+                padding-left: 45px
+            }
+
+            /* Profile picture */
+            .skn-mlf4 .right-box {
+                display: table-cell;
+                vertical-align: top
+            }
+
+            .skn-mlf4 .right-box .section:first-child {
+                padding-top: 0
+            }
+
+            .skn-mlf4 div.summary {
+                padding-top: 20px
+            }
+
+            .skn-mlf4 .left-box:empty,
+            .skn-mlf4 .section:empty {
+                display: none
+            }
+
+            /* PICT */
+            .skn-mlf4 .PICTPic {
+                padding-bottom: 40px
+            }
+
+            .skn-mlf4 .PICTPic>.field {
+                border: 1px solid transparent;
+                position: relative
+            }
+
+            .skn-mlf4 .PICTPic,
+            .skn-mlf4 .PICTPic .field {
+                text-align: center;
+                box-sizing: content-box
+            }
+
+            .skn-mlf4 .PICTPic img {
+                object-fit: cover
+            }
+
+
+            /*parentContainer*/
+            .skn-mlf4 .parentContainer {
+                display: table;
+                table-layout: fixed;
+                width: 100%
+            }
+
+            .skn-mlf4 .SECTION_CNTC {
+                padding-top: 0 !important
+            }
+
+            .skn-mlf4 .left-box .section:first-child,
+            .skn-mlf4 .right-box .section:first-child {
+                padding-top: 0;
+                position: static
+            }
+
+            /* CNTC/ALNK */
+            .skn-mlf4 .adnlLnks li:last-child {
+                padding-bottom: 0
+            }
+
+            /* vertical text */
+            .skn-mlf4 .right-box .singlecolumn {
+                padding-left: 15px;
+                position: relative
+            }
+
+            .skn-mlf4 .exprdiv {
+                position: relative;
+                min-height: 99px
+            }
+
+            .skn-mlf4 .vertical-text {
+                position: absolute;
+                transform: rotate(-90deg);
+                left: -3px;
+                transform-origin: 42px 55px;
+                min-width: 93px;
+                text-align: right;
+                line-height: normal;
+                font-family: verdana;
+                font-size: 9px
+            }
+
+            .skn-mlf4 .left-box .vertical-text {
+                left: 11px
+            }
+
+            /* SVG Icon Style */
+            .skn-mlf4 .iconRow {
+                word-wrap: break-word;
+                display: table;
+                margin-top: 10px;
+                width: 100%;
+                table-layout: fixed
+            }
+
+            .skn-mlf4 .icoTxt {
+                padding-left: 10px;
+                vertical-align: middle;
+                display: table-cell;
+            }
+
+            .skn-mlf4 .iconSvg {
+                width: 15px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .skn-mlf4 .iconSvg svg {
+                display: block;
+                overflow: visible !important
+            }
+
+            .skn-mlf4 .iconRow:first-child {
+                margin-top: 0px
+            }
+
+            .skn-mlf4 .brkall .iconRow:first-child {
+                margin-top: 10px
+            }
+
+            .skn-mlf4 .namesection+.summary .heading {
+                display: none
+            }
+
+            /*Signature*/
+            .skn-mlf4 .sign .field_sign {
+                font-size: 7px;
+                color: #8a8a8a
+            }
+
+            .skn-mlf4 .txtleft+.field_sign {
+                text-align: left
+            }
+
+            .skn-mlf4 .txtcenter+.field_sign {
+                text-align: center
+            }
+
+            .skn-mlf4 .txtright+.field_sign {
+                text-align: right
+            }
+
+            .skn-mlf4 .signPic span:first-child {
+                padding-right: 6px
+            }
+
+            .skn-mlf4 .signPic img {
+                max-width: 100%
+            }
+
+            .skn-mlf4 .signContainer .section:last-child {
+                padding-top: 0
+            }
+
+            /*New logic for infographic*/
+            .skn-mlf4 .lang-sec .singlecolumn,
+            .skn-mlf4 .skli-sec .singlecolumn {
+                display: none
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .infobarpara,
+            .skn-mlf4 .lang-sec.infotilesec .infotilepara,
+            .skn-mlf4 .skli-sec.infobarsec .infobarpara,
+            .skn-mlf4 .skli-sec.infotilesec .infotilepara {
+                display: block
+            }
+
+            /*Infographi Bar*/
+            .skn-mlf4 .lang-sec.infobarsec,
+            .skn-mlf4 .skli-sec.infobarsec {
+                font-size: 0
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .field *,
+            .skn-mlf4 .skli-sec.infobarsec .field *,
+            .skn-mlf4 .lang-sec.infobarsec .nativeLangPara .field {
+                display: inline
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .paragraph,
+            .skn-mlf4 .skli-sec.infobarsec .paragraph {
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 5px;
+                margin-top: 0
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .paragraph .singlecolumn,
+            .skn-mlf4 .skli-sec.infobarsec .singlecolumn {
+                margin-left: 0;
+                padding-left: 0;
+                position: relative
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infobarsec .para_odd,
+            .skn-mlf4 .right-box .skli-sec.infobarsec .para_odd {
+                margin-right: 15px
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec>.paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .lang-sec.infobarsec>.paragraph:nth-last-child(2),
+            .skn-mlf4 .skli-sec.infobarsec>.paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .skli-sec.infobarsec>.paragraph:nth-last-child(2) {
+                padding-bottom: 0 !important
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .paragraph.nativeLangPara {
+                width: 100%
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infobarsec .inner-rating,
+            .skn-mlf4 .right-box .skli-sec.infobarsec .inner-rating {
+                position: relative
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .rating-bar,
+            .skn-mlf4 .skli-sec.infobarsec .rating-bar {
+                background: #d5d6d6;
+                width: 100%;
+                clear: both;
+                margin-top: 3px;
+                position: relative;
+                page-break-inside: avoid
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .inner-rating,
+            .skn-mlf4 .skli-sec.infobarsec .inner-rating {
+                background-color: #b41c2e;
+                height: 4px;
+                position: relative;
+                width: 60%
+            }
+
+            .skn-mlf4 .left-box .lang-sec.infobarsec .paragraph,
+            .skn-mlf4 .left-box .skli-sec.infobarsec .paragraph {
+                display: block;
+                margin-right: 0;
+                width: 100%;
+                max-width: 100%
+            }
+
+            .skn-mlf4 .left-box .skli-sec .paragraph:last-child .singlecolumn .field:last-child {
+                min-height: 0
+            }
+
+            .skn-mlf4 .right-box .skli-sec .paragraph:nth-last-child(1) .singlecolumn .field:last-child,
+            .skn-mlf4 .right-box .skli-sec .paragraph:nth-last-child(2) .singlecolumn .field:last-child {
+                min-height: 0
+            }
+
+            /*Infographic Tiles*/
+            .skn-mlf4 .lang-sec.infotilesec .paragraph,
+            .skn-mlf4 .skli-sec .paragraph {
+                font-size: 0;
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 5px;
+                margin-top: 0
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec>.paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .lang-sec.infotilesec>.paragraph:nth-last-child(2),
+            .skn-mlf4 .skli-sec>.paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .skli-sec>.paragraph:nth-last-child(2) {
+                padding-bottom: 0 !important
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec .field *,
+            .skn-mlf4 .skli-sec .field *,
+            .skn-mlf4 .lang-sec.infotilesec .nativeLangPara .field {
+                display: inline
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec .paragraph .singlecolumn,
+            .skn-mlf4 .skli-sec .singlecolumn {
+                margin-left: 0;
+                padding-left: 0
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec .sliced-rect,
+            .skn-mlf4 .skli-sec .sliced-rect {
+                height: 6px;
+                width: 100%;
+                line-height: 0px;
+                margin-top: 3px;
+                clear: both
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infotilesec .paragraph.para_odd,
+            .skn-mlf4 .right-box .skli-sec .paragraph.para_odd {
+                margin-right: 15px
+            }
+
+            .skn-mlf4 .left-box .lang-sec .paragraph,
+            .skn-mlf4 .left-box .skli-sec .paragraph {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 0
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile,
+            .skn-mlf4 .skli-sec .sliced-rect .sliced-rect-tile {
+                height: 100%;
+                background-color: #d5d6d6;
+                float: left;
+                margin-right: 3px
+            }
+
+            .skn-mlf4 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile:last-child,
+            .skn-mlf4 .skli-sec .sliced-rect .sliced-rect-tile:last-child {
+                margin-right: 0
+            }
+
+            .skn-mlf4 .right-box .lang-sec .paragraph,
+            .skn-mlf4 .right-box .skli-sec .paragraph {
+                padding-bottom: 5px
+            }
+
+            .skn-mlf4 .right-box .lang-sec .paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .lang-sec .paragraph:nth-last-child(2),
+            .skn-mlf4 .right-box .skli-sec .paragraph:nth-last-child(1),
+            .skn-mlf4 .right-box .skli-sec .paragraph:nth-last-child(2) {
+                padding-bottom: 0
+            }
+
+
+            /*Rectangular Rating Blocks*/
+            .skn-mlf4 .sliced-rect .sliced-rect-tile.ratvfill {
+                background-color: #b41c2e
+            }
+
+            .skn-mlf4 .hide-bar .paragraph .rating-bar,
+            .skn-mlf4 .hide-bar .paragraph .sliced-rect,
+            .skn-mlf4 .hide-only-bar .rating-bar,
+            .skn-mlf4 .hide-colon .paragraph .colon {
+                display: none
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infotilesec .paragraph.firstparagraph,
+            .skn-mlf4 .right-box .lang-sec.infotilesec .paragraph.firstparagraph+.paragraph,
+            .skn-mlf4 .right-box .skli-sec .paragraph.firstparagraph,
+            .skn-mlf4 .right-box .skli-sec .paragraph.firstparagraph+.paragraph {
+                margin-top: 0 !important
+            }
+
+            .skn-mlf4 .left-box .lang-sec.infobarsec .paragraph,
+            .skn-mlf4 .left-box .skli-sec.infobarsec .paragraph {
+                max-width: 100%;
+                margin-top: 0
+            }
+
+            /*MFR address order code*/
+            .skn-mlf4 .zipsuffix,
+            .skn-mlf4.LDE .zipprefix {
+                display: block
+            }
+
+            .skn-mlf4 .zipprefix,
+            .skn-mlf4.MFR .zipsuffix,
+            .skn-mlf4.MES .zipsuffix,
+            .skn-mlf4.LDE .zipsuffix {
+                display: none
+            }
+
+            .skn-mlf4.MFR .zipprefix,
+            .skn-mlf4.MES .zipprefix {
+                display: block
+            }
+
+            /* PPDT */
+            .skn-mlf4 .signContainerParent .paragraph {
+                padding: 0 30px 20px 30px;
+                border: none
+            }
+
+            .skn-mlf4 .section.disclaim {
+                background: white
+            }
+
+            .skn-mlf4 .disclaim .field.singlecolumn {
+                margin-left: 0
+            }
+
+            .skn-mlf4 .disclaim .field.singlecolumn,
+            .skn-mlf4 .disclaim .field.singlecolumn li,
+            .skn-mlf4 .disclaim .field.singlecolumn p,
+            .skn-mlf4 .disclaim .field.singlecolumn span {
+                font-size: 9px;
+                color: #8a8a8a
+            }
+
+            /*Social Icons*/
+            .skn-mlf4 .social svg .svg-inricon {
+                fill: #fff
+            }
+
+            .skn-mlf4 .social svg .svg-circlebg,
+            .skn-mlf4 .social svg .svg-fillcirclebg {
+                fill: #000
+            }
+
+            /* GRYR */
+            .skn-mlf4 .displayNoneThisField {
+                display: none
+            }
+
+            /* Keep this class always at bottom */
+
+            /*For Extra Space Before Colon*/
+            .skn-mlf4 .beforecolonspace {
+                display: none !important
+            }
+
+            .skn-mlf4.MFR .beforecolonspace {
+                display: inline !important
+            }
+
+            /*HILT multi para/section*/
+            .skn-mlf4 .multi-section-hilt .multi-para-opt,
+            .skn-mlf4 .section:not(.multi-para-hilt):not(.multi-section-hilt) .multi-para-opt,
+            .skn-mlf4 .multi-para-hilt .dflt-view {
+                display: none
+            }
+
+            .skn-mlf4 .multi-para-hilt:after {
+                content: "";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0
+            }
+
+            /*Clearfix*/
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph {
+                display: block;
+                float: left;
+                clear: none;
+                margin-top: 0px;
+                margin-right: 2%
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .singlecolumn {
+                padding-left: 0
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph:nth-child(2n) {
+                clear: left
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph:nth-child(2n+1) {
+                margin-right: 0;
+                float: left
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph:last-child,
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph:nth-last-child(2):nth-child(2n) {
+                margin-bottom: 0
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .singlecolumn {
+                margin-left: 0 !important
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph {
+                margin-bottom: 12px
+            }
+
+            .skn-mlf4 .left-box .multi-para-hilt .paragraph.firstparagraph,
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph.firstparagraph {
+                margin-top: 0
+            }
+
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph:nth-child(2n+1) .singlecolumn {
+                padding-left: 0
+            }
+
+            /* Text Align Adjust */
+
+            .skn-mlf4 .ttc-align-left ul {
+                text-align: left
+            }
+
+            .skn-mlf4 .ttc-align-right ul {
+                text-align: right
+            }
+
+            .skn-mlf4 .ttc-align-center ul {
+                text-align: center
+            }
+
+            .skn-mlf4 .ttc-align-justify ul {
+                text-align: justify
+            }
+
+            .skn-mlf4 .ttc-align-right li:before,
+            .skn-mlf4 .ttc-align-center li:before {
+                position: relative;
+                left: -4.5px
+            }
+
+            /*PICT support*/
+            .skn-mlf4.pict-pcpf-none .PICTPic {
+                display: none
+            }
+
+            /* .skn-mlf4.pict-pcpf-none .left-box{padding-top:82px} */
+        </style>
+        <style type="text/css" id="dynamic" data-time="Fri Jul 05 2024 11:50:52 GMT+0530 (India Standard Time)">
+            .skn-mlf4,
+            .skn-mlf4 table {
+                line-height: 17px
+            }
+
+            .skn-mlf4.pagesize {
+                width: 749px
+            }
+
+            .skn-mlf4.fontsize,
+            .skn-mlf4 .lang-sec.infobarsec .paragraph *,
+            .skn-mlf4 .lang-sec.infotilesec .paragraph *,
+            .skn-mlf4 .skli-sec .paragraph * {
+                font-size: 13px
+            }
+
+            .skn-mlf4.fontface {
+                font-family: Verdana
+            }
+
+            .skn-mlf4 .section {
+                padding-top: 25px
+            }
+
+            .skn-mlf4 .paragraph {
+                margin-top: 15px
+            }
+
+            .skn-mlf4 .parentContainer .singlecolumn,
+            .skn-mlf4 .parentContainer .maincolumn {
+                margin-left: 0px
+            }
+
+            .skn-mlf4 .left-box .paragraph .singlecolumn,
+            .skn-mlf4 .right-box .skli-sec .singlecolumn,
+            .skn-mlf4 .left-box .refer-sec .paragraph.singlecolumn {
+                margin-left: 0
+            }
+
+            .skn-mlf4 .name {
+                font-size: 35px;
+                line-height: 42px
+            }
+
+            .skn-mlf4 .sectiontitle {
+                font-size: 13px;
+                line-height: 15px
+            }
+
+            .skn-mlf4 .left-box .multi-para-hilt .paragraph {
+                margin-top: 15px
+            }
+
+            .skn-mlf4 .parentcontainer .left-box {
+                width: {
+                    $RBOX
+                }
+
+                px
+            }
+
+            .skn-mlf4 .vertical-text {
+                top: 0px
+            }
+
+            .skn-mlf4 .exprdiv {
+                min-height: 124px
+            }
+
+            .skn-mlf4 .jobline ul li:last-child:after,
+            .skn-mlf4 .jobline p:last-child:after {
+                height: 100%
+            }
+
+            .skn-mlf4 .experience ul:before {
+                top: 10px
+            }
+
+            .skn-mlf4 .experience ul li:last-child:after,
+            .skn-mlf4 .jobline p:last-child:after {
+                top: 10px !important
+            }
+
+            .skn-mlf4 .PICTPic,
+            .skn-mlf4 .PICTPic .field {
+                width: 151px;
+                height: 151px
+            }
+
+            .skn-mlf4 .skli-sec .singlecolumn .field:last-child {
+                min-height: 17px
+            }
+
+            .skn-mlf4 .PICTPic img {
+                width: 117px;
+                min-width: 117px;
+                max-width: 117px;
+                height: 151px;
+                max-height: 151px;
+                min-height: 151px
+            }
+
+            /* icons */
+            .skn-mlf4 .left-box {
+                width: 220px
+            }
+
+            .skn-mlf4 .iconSvg svg {
+                height: 18px;
+                width: 18px
+            }
+
+            .skn-mlf4 .iconSvg {
+                width: 18px
+            }
+
+            /*SDCL*/
+            .skn-mlf4 .PICTPic .field:empty {
+                opacity: 0
+            }
+
+            .skn-mlf4 .topbg svg path {
+                fill: #88BAFF
+            }
+
+            .skn-mlf4 .section .heading {
+                border-color: #88BAFF
+            }
+
+            /*Infographic Bar*/
+            .skn-mlf4 .right-box .lang-sec.infobarsec .paragraph,
+            .skn-mlf4 .right-box .skli-sec.infobarsec .paragraph {
+                width: 204px
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infobarsec,
+            .skn-mlf4 .right-box .skli-sec.infobarsec,
+            .skn-mlf4 .right-box .multi-para-hilt {
+                margin-left: 18px
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infobarsec .heading,
+            .skn-mlf4 .right-box .skli-sec.infobarsec .heading,
+            .skn-mlf4 .right-box .multi-para-hilt .heading {
+                margin-left: -18px
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .inner-rating,
+            .skn-mlf4 .skli-sec.infobarsec .inner-rating {
+                background-color: #88BAFF
+            }
+
+            .skn-mlf4 .left-box .lang-sec.infobarsec .paragraph,
+            .skn-mlf4 .left-box .skli-sec.infobarsec .paragraph {
+                padding-bottom: 6px
+            }
+
+            .skn-mlf4 .lang-sec.infobarsec .nativeLangPara {
+                width: 432px;
+                max-width: 432px
+            }
+
+            /*Infographic Tiles*/
+            .skn-mlf4 .right-box .lang-sec.infotilesec,
+            .skn-mlf4 .right-box .skli-sec {
+                margin-left: 18px
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infotilesec .heading,
+            .skn-mlf4 .right-box .skli-sec .heading {
+                margin-left: -18px
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infotilesec .paragraph,
+            .skn-mlf4 .right-box .skli-sec .paragraph {
+                width: 204px
+            }
+
+            .skn-mlf4 .left-box .lang-sec .paragraph,
+            .skn-mlf4 .left-box .skli-sec .paragraph {
+                padding-bottom: 6px
+            }
+
+            .skn-mlf4 .right-box .lang-sec.infotilesec .nativeLangPara {
+                width: 432px !important;
+                max-width: 432px
+            }
+
+            /*Rectangular Rating Blocks*/
+            .skn-mlf4 .paragraph .sliced-rect .sliced-rect-tile.ratvfill {
+                background-color: #88BAFF
+            }
+
+            /* fixes for builder */
+            .skn-mlf4 .left-box>.SortableItem:first-child .section,
+            .skn-mlf4 .right-box .SortableItem:first-child .section,
+            .skn-mlf4 .left-box>.sortable-item:first-child .section,
+            .skn-mlf4 .right-box .sortable-item:first-child .section {
+                padding-top: 0;
+                position: static
+            }
+
+            .skn-mlf4 .SortableItem .topbg,
+            .skn-mlf4 .sortable-item .topbg {
+                left: -31px;
+                top: -25px
+            }
+
+            .skn-mlf4 .SortableItem:first-child+.SortableItem .sortableInner>.SortableItem:first-child .jobline:after,
+            .skn-mlf4 .SortableItem:first-child+.SortableItem.active .sortableInner>.SortableItem:first-child .jobline:after,
+            .skn-mlf4 .SortableItem:first-child+.SortableItem .sortableInner>.SortableItem.active:first-child .jobline:after,
+            .skn-mlf4 .sortable-item:first-child+.sortable-item.active .sortableInner>.sortable-item:first-child .jobline:after,
+            .skn-mlf4 .right-box .SortableItem:first-child+.SortableItem .summary .heading,
+            .skn-mlf4 .right-box .sortable-item:first-child+.sortable-item .summary .heading {
+                display: none
+            }
+
+            .skn-mlf4 .left-box .SortableItem .section,
+            .skn-mlf4 .right-box .SortableItem .section,
+            .skn-mlf4 .left-box .sortable-item .section,
+            .skn-mlf4 .right-box .sortable-item .section {
+                padding-top: 25px
+            }
+
+            .skn-mlf4 .SortableItem .PICTPic,
+            .skn-mlf4 .SortableItem .PICTPic .field {
+                z-index: 8
+            }
+
+            .skn-mlf4 .sortable-item .PICTPic,
+            .skn-mlf4 .sortable-item .PICTPic .field {
+                z-index: 9
+            }
+
+            .skn-mlf4 .left-box>.SortableItem:first-child .wrapper,
+            .skn-mlf4 .left-box>.sortable-item:first-child .doc-item {
+                z-index: auto
+            }
+
+            .skn-mlf4 .data-EXPR .jobline ul li:last-child:after {
+                top: {
+                    $LBBH
+                }
+
+                px
+            }
+
+            .skn-mlf4 .right-box .lang-sec .paragraph+.paragraph {
+                max-width: 204px
+            }
+
+            .skn-mlf4 .right-box .active .lang-sec .text-rename,
+            .skn-mlf4 .right-box .active .skli-sec .text-rename {
+                margin-left: -18px
+            }
+
+            .skn-mlf4 .right-box .sortable-item .lang-sec,
+            .skn-mlf4 .right-box .sortable-item .skli-sec {
+                margin-left: 0;
+                padding-left: 18px
+            }
+
+            .skn-mlf4 .right-box .lang-sec .sortable-item,
+            .skn-mlf4 .right-box .skli-sec .sortable-item {
+                display: inline-block;
+                vertical-align: top
+            }
+
+            .skn-mlf4 .right-box .lang-sec .sortable-item .nativeLangPara .singlecolumn {
+                width: 432px !important;
+                max-width: 432px !important
+            }
+            }
+
+            .skn-mlf4 .sortable-item i.far.fa-check {
+                font-family: "Font Awesome 5 Pro"
+            }
+
+            .skn-mlf4 .skli-sec.SECTION_SKLI .paragraph * {
+                color: #020303
+            }
+
+            .skn-mlf4 .right-box .skli-sec.SECTION_SKLI .sortable-item {
+                display: inline-block;
+                vertical-align: top
+            }
+
+            .skn-mlf4 .right-box .lang-sec .sortableInner .sortable-item,
+            .skn-mlf4 .right-box .skli-sec .sortableInner .sortable-item {
+                padding-bottom: 5px
+            }
+
+            .skn-mlf4 .right-box .lang-sec .sortableInner .sortable-item:nth-last-child(1),
+            .skn-mlf4 .right-box .lang-sec .sortableInner .sortable-item:nth-last-child(2),
+            .skn-mlf4 .right-box .skli-sec .sortableInner .sortable-item:nth-last-child(1),
+            .skn-mlf4 .right-box .skli-sec .sortableInner .sortable-item:nth-last-child(2) {
+                padding-bottom: 0
+            }
+
+            .resume-preview .skn-mlf4 .right-box .lang-sec .para_odd,
+            .resume-preview .skn-mlf4 .right-box .skli-sec .para_odd,
+            .resume-preview .skn-mlf4 .right-box .lang-sec .para_even,
+            .resume-preview .skn-mlf4 .right-box .skli-sec .para_even {
+                width: 189px;
+                max-width: 189px
+            }
+
+            /* Fix for Lde */
+            .resume-preview .skn-mlf4.LDE .right-box .lang-sec .sortable-item .para_odd,
+            .resume-preview .skn-mlf4.LDE .right-box .skli-sec .sortable-item .para_odd,
+            .resume-preview .skn-mlf4.LDE .right-box .lang-sec .sortable-item .para_even,
+            .resume-preview .skn-mlf4.LDE .right-box .skli-sec .sortable-item .para_even {
+                width: 189px;
+                max-width: 189px
+            }
+
+            .skn-mlf4.LDE .right-box .lang-sec .sortable-item .paragraph,
+            .skn-mlf4.LDE .right-box .skli-sec .sortable-item .paragraph {
+                width: 217px;
+                max-width: 217px
+            }
+
+            .skn-mlf4.LDE .right-box .lang-sec .sortable-item .paragraph.nativeLangPara {
+                max-width: 100%
+            }
+
+            /* IE support  */
+            @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+                .skn-mlf4 .iconSvg svg {
+                    width: 19px;
+                }
+            }
+
+            /*PPDT*/
+            .skn-mlf4 .disclaim.section {
+                padding-top: 63px
+            }
+
+            /*Multi-para HILT*/
+            .skn-mlf4 .right-box .multi-para-hilt .paragraph {
+                width: 49%;
+                max-width: 49%
+            }
+
+            /*Fixes for builder for skill*/
+            .skn-mlf4 .skli-sec .sortable-item .paragraph:last-child .singlecolumn .field:last-child {
+                min-height: 17px
+            }
+
+            .skn-mlf4 .left-box .skli-sec .sortable-item:last-child .paragraph .singlecolumn .field:last-child,
+            .skn-mlf4 .right-box .skli-sec .sortable-item:nth-last-child(1) .paragraph .singlecolumn .field:last-child,
+            .skn-mlf4 .right-box .skli-sec .sortable-item:nth-last-child(2) .paragraph .singlecolumn .field:last-child {
+                min-height: 0
+            }
+
+            .skn-mlf4 .left-box .lang-sec .sortableInner>.sortable-item:nth-last-child(1) .paragraph,
+            .skn-mlf4 .left-box .skli-sec .sortableInner>.sortable-item:nth-last-child(1) .paragraph {
+                padding-bottom: 0
+            }
+
+            .skn-mlf4 .right-box .lang-sec .sortableInner>.sortable-item:nth-last-child(1) .paragraph,
+            .skn-mlf4 .right-box .lang-sec .sortableInner>.sortable-item:nth-last-child(2) .paragraph,
+            .skn-mlf4 .right-box .skli-sec .sortableInner>.sortable-item:nth-last-child(1) .paragraph,
+            .skn-mlf4 .right-box .skli-sec .sortableInner>.sortable-item:nth-last-child(2) .paragraph {
+                padding-bottom: 0 !important
+            }
+
+            .skn-mlf4.pict-pcpf-none .SECTION_CNTC {
+                margin-top: 75px
+            }
+        </style>
+    </div>
+    <div class="document doc-root fontsize fontface vmargins hmargins pagesize skn-mlf4 MLF4 LUK pict-pcpf-purl"
+        docskinwidth="749" style="max-width: 749.7px; min-height: 792px;">
+        <div id="CONTAINER_PARENT_0" class="parentContainer">
+            <div id="CONTAINER_0" class="left-box">
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-PICT">
+                    <div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div>
+                    <div id="SECTION_PICT40f9c5b1-f5af-4773-9e78-cb4219f9bb2f"
+                        class="section notdraggable SECTION_PICT firstsection    " data-section-cd="PICT" tabindex="0">
+                        <div class=" doc-item">
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_PICT_c5eb0cac-f78d-44cd-a0c8-68e29a09991c"
+                                        class="paragraph PARAGRAPH_PICT firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="topbg">
+                                                <svg x="0px" y="0px" viewBox="0 0 10 10">
+                                                    <path d="M0,0l0,7.5C0.3,8.2,2.5,9,4,9c3.3,0,7.7-3.7,5.3-9H0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="PICTPic">
+                                                <div class="field" id="FIELD_PURL"><img class="chk"
+                                                        src="https://assets.livecareer.co.uk/photos/p/in/29/293f265f-636a-4945-8206-4694fe0c7620.jpeg?0.7760017705493771"
+                                                        alt="Smiley face"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="doc-overlay para-overlay" style="left:-2px; right: -2px;"><span
+                                                class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc-overlay section-overlay" style="left:-2px; right: -2px;"><span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-CNTC">
+                    <div id="SECTION_CNTCbecb9d11-ce92-487a-b4b1-e2186dd7aab5"
+                        class="section SECTION_CNTC notdraggable    has-title  " data-section-cd="CNTC">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_CNTC">Contact</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_CNTC_01ccbe84-9858-4bb2-898f-0ec6ce0f2f4a"
+                                        class="paragraph PARAGRAPH_CNTC firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="address">
+                                                <div class="iconRow" dependency="ADDR|STRT|CITY|STAT|ZIPC">
+                                                    <div class="iconSvg">
+                                                        <svg width="15" height="15" viewBox="-0.5 -0.5 16 16">
+                                                            <path fill="#020303"
+                                                                d="M7.537 4.51a1.827 1.827 0 1 0 0 3.654 1.827 1.827 0 0 0 0-3.654">
+                                                            </path>
+                                                            <path fill="#020303"
+                                                                d="M7.5 0a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15m.045 12.002s3.571-2.654 3.571-5.662a3.57 3.57 0 0 0-3.571-3.566A3.568 3.568 0 0 0 3.974 6.34c0 3.008 3.571 5.662 3.571 5.662">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="icoTxt zipsuffix">
+                                                        <span id="FIELD_STRT"></span><span dependency="STRT"
+                                                            style="display: none;"><span dependency="CITY|STAT|ZIPC"
+                                                                style="display: none;">,</span></span>
+                                                        <span id="FIELD_CITY"></span><span dependency="CITY+STAT|ZIPC"
+                                                            style="display: none;">,</span>
+                                                        <span id="FIELD_STAT"></span><span dependency="ZIPC+STAT"
+                                                            style="display: none;">,</span>
+                                                        <span id="FIELD_ZIPC"></span>
+                                                        <span id="FIELD_ADDR">Ankleshwar, 393001</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="iconRow" dependency="HPHN|CPHN">
+                                                    <div class="iconSvg">
+                                                        <svg width="15" height="15" viewBox="-0.5 -0.5 16 16">
+                                                            <path fill="#020303"
+                                                                d="M10.979 10.358c-.063.063-.133.113-.202.165L9.204 8.95c.246-.39.145-.705-.116-.966L7.094 5.99c-.262-.26-.596-.38-.987-.136L4.483 4.23c.052-.069.102-.139.165-.202l.39-.39c.735-.736 2.441-.22 4.497 1.834 2.055 2.056 2.569 3.762 1.835 4.496zm-1.147 1.147a.369.369 0 0 1-.52 0l-1.081-1.082a.366.366 0 0 1 0-.519l.529-.529 1.601 1.601zm-4.73-4.73a.369.369 0 0 1-.52 0L3.501 5.693a.366.366 0 0 1 0-.519l.529-.529 1.601 1.601zM7.5 15a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="icoTxt">
+                                                        <span id="FIELD_HPHN"></span><span dependency="HPHN+CPHN"
+                                                            style="display: none;">,</span>
+                                                        <span id="FIELD_CPHN">+91-9227747997</span>
+                                                    </div>
+                                                </div>
+                                                <div class="iconRow" dependency="EMAI">
+                                                    <div class="iconSvg">
+                                                        <svg width="15" height="15" viewBox="-0.5 -0.5 16 16">
+                                                            <path fill="#020303"
+                                                                d="M10.913 5.66l-3.32 1.808c-.051.026-.114.026-.151 0L4.109 5.66c-.038-.026-.088-.013-.126 0-.038.026-.063.065-.063.104v.656c0 .052.025.092.063.118l3.459 1.978a.109.109 0 0 0 .063.013c.025 0 .037 0 .062-.013l3.459-1.978a.139.139 0 0 0 .063-.118v-.656c.012-.04-.013-.078-.051-.104a.11.11 0 0 0-.125 0">
+                                                            </path>
+                                                            <path fill="#020303"
+                                                                d="M7.5 0a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zm4.106 5.015a.173.173 0 0 0-.167-.173H3.572c-.09 0-.166.08-.166.173v5.157c0 .093.076.173.166.173h7.867c.09 0 .167-.08.167-.173z">
+                                                            </path>
+                                                        </svg>
+
+                                                    </div>
+                                                    <div class="icoTxt">
+                                                        <span id="FIELD_EMAI">modi.parth1433@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="doc-overlay para-overlay" style="left:-2px; right: -2px;"><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-CUST">
+                    <div id="SECTION_CUSTc29342b2-882f-5c9a-abdc-92a76c6e5f15"
+                        class="section SECTION_CUST    has-title  " data-section-cd="CUST">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_CUST">Linkdin</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_CUST_33363a4c-557a-4cd2-a2bd-70dfccb0aada"
+                                        class="paragraph PARAGRAPH_CUST firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="singlecolumn" id="FIELD_FRFM">
+                                                <p>https://www.linkedin.com/in/parth-modi-1204</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-CUST">
+                    <div id="SECTION_CUST567e0bd5-b723-280d-d996-5a9a76ffb80a"
+                        class="section SECTION_CUST    has-title  " data-section-cd="CUST">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_CUST">Personal Info</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_CUST_fd360b9d-f859-40be-9245-c93f084341d0"
+                                        class="paragraph PARAGRAPH_CUST firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="singlecolumn" id="FIELD_FRFM">
+                                                <ul>
+                                                    <li>Age: 26 years</li>
+                                                    <li>Title: Software Engineer</li>
+                                                    <li>Date of birth: 12/04/98</li>
+                                                    <li>Gender: Male</li>
+                                                    <li>Marital status: Single</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-HILT">
+                    <div id="SECTION_HILT55421190-b425-4785-b6a8-bab1e01e0439"
+                        class="section SECTION_HILT    has-title  " data-section-cd="HILT">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_HILT">Skills</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_HILT_446562aa-ff21-77ee-f91a-386f94bc4ee6"
+                                        class="paragraph PARAGRAPH_HILT firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="singlecolumn maincolumn">
+                                                <div class="skill dflt-view">
+                                                    <span class="paddedline" id="FIELD_SKC1">
+                                                        <ul>
+                                                            <li>React Js</li>
+                                                            <li>Node Js</li>
+                                                            <li>Javascript</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="paddedline" id="FIELD_SKC2">
+                                                        <ul>
+                                                            <li>Git</li>
+                                                            <li>Jenkins</li>
+                                                            <li>AWS Services</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-CUST">
+                    <div id="SECTION_CUST2003d964-6733-899e-d9e8-c5409acb5d9a"
+                        class="section SECTION_CUST    has-title  " data-section-cd="CUST">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_CUST">Hobbies</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_CUST_ef76acd7-65c0-4b19-95bf-f429970c023f"
+                                        class="paragraph PARAGRAPH_CUST firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="singlecolumn" id="FIELD_FRFM">
+                                                <ul>
+                                                    <li>Travelling</li>
+                                                    <li>Photography</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-CUST">
+                    <div id="SECTION_CUST1e3c050e-7630-4a85-a0e6-70a2c7bcac78"
+                        class="section SECTION_CUST    has-title  " data-section-cd="CUST">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_CUST">Disclaimer</div>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_CUST_947e6fcf-cf50-47da-bf6a-4f85137e15f1"
+                                        class="paragraph PARAGRAPH_CUST firstparagraph  ">
+                                        <div class="clearfix doc-item" style="text-align: justify">
+                                            <div class="singlecolumn" id="FIELD_FRFM">I hereby declare that all the
+                                                above
+                                                information is correct to the best of my knowledge and belief.</div>
+                                        </div>
+                                        <div class="doc-overlay para-overlay" style="left:-2px; right: -2px;"><span
+                                                class="badge badge-primary badge-edit"></span><span>&nbsp;</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc-overlay section-overlay" style="left:-2px; right: -2px;"><span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="CONTAINER_1" class="right-box">
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-NAME">
+                    <div id="SECTION_NAME4ddb6dd9-a8c7-44ba-baa4-9615e5ab7dae"
+                        class="section namesection notdraggable SECTION_NAME firstsection    " data-section-cd="NAME">
+                        <div class=" doc-item">
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_NAME_fc650efe-d3c4-4895-8118-3820a1b9e1eb"
+                                        class="paragraph PARAGRAPH_NAME firstparagraph  ">
+                                        <div>
+                                            <div class="name" dependency="FNAM|LNAM">
+                                                <span id="FIELD_FNAM">Parth</span>
+                                                <span id="FIELD_LNAM">Modi&nbsp;</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectiontitle" id="SECTIONNAME_EXPR">Software Engineer</div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-SUMM">
+                    <div id="SECTION_SUMMa0e5bbfe-79d9-471d-9ebc-483d10ea34f1"
+                        class="section summary SECTION_SUMM    has-title  " data-section-cd="SUMM">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_SUMM">Summary</div>
+                            </div>
+
+                            <div class="">
+                                <div class="">
+                                    <div id="PARAGRAPH_SUMM_06231a7e-2aed-41e4-8173-c0c19eb23f01"
+                                        class="paragraph PARAGRAPH_SUMM firstparagraph  ">
+                                        <div class="clearfix doc-item">
+                                            <div class="singlecolumn" id="FIELD_FRFM" style="text-align: justify">
+                                                <ul>
+                                                    <li>Having 4.6 years of experience in developing Web and Enterprise
+                                                        Applications using technologies like React Js, Node Js, JSX,
+                                                        JavaScript. JQuery, Postman, JIRA, GIT.</li>
+                                                    <li>Experience in MYSQL database and Cloud (AWS Services). Good
+                                                        Exposure
+                                                        to code promotions with build &amp; Release activities by
+                                                        adhering
+                                                        to Software Configuration Management framework.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-EXPR">
+                    <div id="SECTION_EXPR2f588492-e11a-4f14-8a56-9f8c07ebb965"
+                        class="section experience SECTION_EXPR   multi-para has-title  " data-section-cd="EXPR">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_EXPR">Experience</div>
+                                <div class="sectiontitle" id="SECTIONNAME_EXPR"><span title=" Experience "
+                                        class="rename-section text-rename"><br></span></div>
+                            </div>
+                            <div class="">
+                                <div id="CONTAINER_2f588492-e11a-4f14-8a56-9f8c07ebb965" class="sortableInner">
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EXPR_d5df3ac3-85e9-49c2-91d5-69e2c30334eb"
+                                            class="paragraph PARAGRAPH_EXPR firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn">
+                                                    <span class="dispBlock locationGap"
+                                                        dependency="COMP|JSTA|JCIT|JTIT|JCTR|JCNT">
+                                                        <span class="jobtitle dispBlock">
+                                                            <span class="txt-bold" id="FIELD_JTIT">Software Engineer
+                                                                at<span
+                                                                    style="font-weight: 400;">&nbsp;</span></span><span
+                                                                class="companyname txt-bold" id="FIELD_COMP">Houghton
+                                                                Mifflin Harcourt India</span><span
+                                                                dependency="COMP"><span
+                                                                    dependency="JSTA|JCIT|JCNT|JCTR"> -</span></span>
+                                                            <span class="jobcity"
+                                                                id="FIELD_JCIT">Pune</span></span></span>
+                                                    <div class="exprdiv" dependency="JSTD|EDDT|JDES">
+                                                        <span class="dispBlock vertical-text txtItl"
+                                                            dependency="JSTD|EDDT">
+                                                            <span class="jobdates" id="FIELD_JSTD"
+                                                                format="%m/%Y">04/2023</span><span
+                                                                dependency="JSTD+EDDT"> -
+                                                            </span>
+                                                            <span class="jobdates" id="FIELD_EDDT"
+                                                                format="%m/%Y">Current</span>
+                                                        </span>
+                                                        <span class="jobline" id="FIELD_JDES"
+                                                            style="text-align: justify">
+                                                            <ul>
+                                                                <li>Our project is based on an Ed platform, and I have
+                                                                    worked extensively with React. I have utilised React
+                                                                    Redux functionality, including Reducers and
+                                                                    Providers. I
+                                                                    integrated GraphQL API endpoints and also worked
+                                                                    with
+                                                                    AWS and Datadog. Additionally, I have experience
+                                                                    working
+                                                                    with Node.js.</li>
+                                                                <li>Furthermore, I wrote test cases for everything we
+                                                                    developed using React Testing Library and handled
+                                                                    the
+                                                                    development. Additionally, I focused extensively on
+                                                                    deployment and builds, which were managed through
+                                                                    Jenkins.</li>
+                                                            </ul>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EXPR_8d91a1ef-987b-4d49-8a93-e06b591fadb4"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn">
+                                                    <span class="dispBlock locationGap"
+                                                        dependency="COMP|JSTA|JCIT|JTIT|JCTR|JCNT">
+                                                        <span class="jobtitle dispBlock">
+                                                            <span class="txt-bold" id="FIELD_JTIT">Frontend Developer
+                                                                at<span
+                                                                    style="font-weight: 400;">&nbsp;</span></span><span
+                                                                class="companyname txt-bold" id="FIELD_COMP">Repos
+                                                                Energy
+                                                                Pvt. Ltd.</span><span dependency="COMP"><span
+                                                                    dependency="JSTA|JCIT|JCNT|JCTR"> -</span></span>
+                                                            <span class="jobcity"
+                                                                id="FIELD_JCIT">Pune</span></span></span>
+                                                    <div class="exprdiv" dependency="JSTD|EDDT|JDES">
+                                                        <span class="dispBlock vertical-text txtItl"
+                                                            dependency="JSTD|EDDT">
+                                                            <span class="jobdates" id="FIELD_JSTD"
+                                                                format="%m/%Y">07/2022</span><span
+                                                                dependency="JSTD+EDDT"> -
+                                                            </span>
+                                                            <span class="jobdates" id="FIELD_EDDT"
+                                                                format="%m/%Y">04/2023</span>
+                                                        </span>
+                                                        <span class="jobline" id="FIELD_JDES"
+                                                            style="text-align: justify">
+                                                            <ul>
+                                                                <li>I worked on the Partner app for Repos Energy, which
+                                                                    was
+                                                                    entirely developed using React. In this project, I
+                                                                    used
+                                                                    React Redux, routing, components, states, and hooks.
+                                                                    Application showing all the details about Pending,
+                                                                    due
+                                                                    &amp; all orders.</li>
+                                                                <li>I also worked on the Super Admin app, which allows
+                                                                    viewing the status of particular orders. In this
+                                                                    project, I used the same React concepts, including
+                                                                    React
+                                                                    Redux, routing, components, states, and hooks.</li>
+                                                            </ul>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EXPR_087cf69a-54d2-4618-8dd1-6cd7bb187ce3"
+                                            class="paragraph PARAGRAPH_EXPR  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn"><span class="dispBlock locationGap"
+                                                        dependency="COMP|JSTA|JCIT|JTIT|JCTR|JCNT"><span
+                                                            class="jobtitle dispBlock"><span class="txt-bold"
+                                                                id="FIELD_JTIT">Technical Consultant at<span
+                                                                    style="font-weight: 400;">&nbsp;</span></span><span
+                                                                class="companyname txt-bold" id="FIELD_COMP">Streebo
+                                                                Private
+                                                                Limited</span><span dependency="COMP"><span
+                                                                    dependency="JSTA|JCIT|JCNT|JCTR"> -</span></span>
+                                                            <span class="jobcity"
+                                                                id="FIELD_JCIT">Ahemdabad</span></span></span>
+                                                    <div class="exprdiv" dependency="JSTD|EDDT|JDES">
+                                                        <span class="dispBlock vertical-text txtItl"
+                                                            dependency="JSTD|EDDT">
+                                                            <span class="jobdates" id="FIELD_JSTD"
+                                                                format="%m/%Y">01/2020</span><span
+                                                                dependency="JSTD+EDDT"> -
+                                                            </span>
+                                                            <span class="jobdates" id="FIELD_EDDT"
+                                                                format="%m/%Y">07/2022</span>
+                                                        </span>
+                                                        <span class="jobline" id="FIELD_JDES"
+                                                            style="text-align: justify">
+                                                            <ul>
+                                                                <li>Insurance Project is the website developed for end
+                                                                    users
+                                                                    and agents. It is developed for India and outside so
+                                                                    user can buy
+                                                                    policy from anywhere.
+                                                                </li>
+                                                                <li>This website provides insurance to user.
+                                                                    This Web Application includes modules like quote
+                                                                    generation, Form filling, Document Upload, EKYC,
+                                                                    Application Tracker. For this Project, I used the
+                                                                    functionality of React Js and Node Js.</li>
+                                                                <li><br></li>
+                                                            </ul>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-react-beautiful-dnd-draggable="17"
+                    class="sortable-item section-container SortableItem-sibling data-EDUC">
+                    <div id="SECTION_EDUCe57c4447-08f6-43d6-9b11-4177df84600a"
+                        class="section SECTION_EDUC   multi-para has-title  " data-section-cd="EDUC">
+                        <div class=" doc-item">
+                            <div class="heading">
+                                <div class="sectiontitle" id="SECTIONNAME_EDUC">Education</div>
+                            </div>
+                            <div class="">
+                                <div id="CONTAINER_e57c4447-08f6-43d6-9b11-4177df84600a" class="sortableInner">
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EDUC_4f49bbca-2748-4a59-9b27-a6f4f14b1066"
+                                            class="paragraph PARAGRAPH_EDUC firstparagraph  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn">
+                                                    <div>
+                                                        <span class="dispBlock" dependency="GRYR|GRED|GRST|GRIP">
+                                                            <span
+                                                                class="xslt_static_change displayNoneThisField">Expected
+                                                                in </span>
+                                                            <span class="jobdates" id="FIELD_GRST"
+                                                                format="%m/%Y"></span><span dependency="GRST+GRED"
+                                                                style="display: none;"> - </span><span class="jobdates"
+                                                                id="FIELD_GRED" format="%m/%Y"></span>
+                                                            <span dependency="GRED|GRST" style="display: none;"><span
+                                                                    dependency="GRIP"
+                                                                    style="display: none;">-</span></span>
+                                                            <span id="FIELD_GRIP"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="DGRE|STUY">
+                                                            <span class="degree txt-bold" id="FIELD_DGRE">Bachelor of
+                                                                Engineering in Information Technology</span><span
+                                                                dependency="DGRE+STUY" style="display: none;">
+                                                            </span><span class="programline txt-bold"
+                                                                id="FIELD_STUY"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="SCHO|SCIT|SSTA|SCNT|GRHN">
+                                                            <span class="companyname txt-bold" id="FIELD_SCHO">LDRP-ITR
+                                                                College</span><span dependency="SCHO"><span
+                                                                    dependency="SCIT|SSTA|SCNT|GRHN"> -</span></span>
+                                                            <span class="joblocation jobcity"
+                                                                id="FIELD_SCIT">Gandhinagar,
+                                                                Gujarat - 2020</span><span dependency="SCIT+SSTA|SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobstate"
+                                                                id="FIELD_SSTA"></span><span dependency="SSTA+SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobcountry"
+                                                                id="FIELD_SCNT"></span><span
+                                                                dependency="SCIT|SSTA|SCNT"><span dependency="GRHN"
+                                                                    style="display: none;"> - </span></span>
+                                                            <span id="FIELD_GRHN"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="degreeGap" dependency="GRPA" style="display: none;">
+                                                        <span class="txt-bold xslt_static_change">GPA</span><span
+                                                            class="beforecolonspace"> </span><span>: </span><span
+                                                            id="FIELD_GRPA"></span>
+                                                    </div>
+                                                    <span id="FIELD_FRFM">
+                                                        <p>CPI: 7.91 | CGPA: 8.20</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EDUC_8cfe4ae3-af39-43bb-a0b7-e7bb980799d0"
+                                            class="paragraph PARAGRAPH_EDUC  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn">
+                                                    <div>
+                                                        <span class="dispBlock" dependency="GRYR|GRED|GRST|GRIP">
+                                                            <span
+                                                                class="xslt_static_change displayNoneThisField">Expected
+                                                                in </span>
+                                                            <span class="jobdates" id="FIELD_GRST"
+                                                                format="%m/%Y"></span><span dependency="GRST+GRED"
+                                                                style="display: none;"> - </span><span class="jobdates"
+                                                                id="FIELD_GRED" format="%m/%Y"></span>
+                                                            <span dependency="GRED|GRST" style="display: none;"><span
+                                                                    dependency="GRIP"
+                                                                    style="display: none;">-</span></span>
+                                                            <span id="FIELD_GRIP"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="DGRE|STUY">
+                                                            <span class="degree txt-bold"
+                                                                id="FIELD_DGRE">H.S.C</span><span dependency="DGRE+STUY"
+                                                                style="display: none;"> </span><span
+                                                                class="programline txt-bold" id="FIELD_STUY"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="SCHO|SCIT|SSTA|SCNT|GRHN">
+                                                            <span class="companyname txt-bold" id="FIELD_SCHO">Sarvoday
+                                                                High
+                                                                School</span><span dependency="SCHO"><span
+                                                                    dependency="SCIT|SSTA|SCNT|GRHN"> -</span></span>
+                                                            <span class="joblocation jobcity"
+                                                                id="FIELD_SCIT">Ankleshwar,
+                                                                Gujarat - 2016</span><span dependency="SCIT+SSTA|SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobstate"
+                                                                id="FIELD_SSTA"></span><span dependency="SSTA+SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobcountry"
+                                                                id="FIELD_SCNT"></span><span
+                                                                dependency="SCIT|SSTA|SCNT"><span dependency="GRHN"
+                                                                    style="display: none;"> - </span></span>
+                                                            <span id="FIELD_GRHN"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="degreeGap" dependency="GRPA" style="display: none;">
+                                                        <span class="txt-bold xslt_static_change">GPA</span><span
+                                                            class="beforecolonspace"> </span><span>: </span><span
+                                                            id="FIELD_GRPA"></span>
+                                                    </div>
+                                                    <span id="FIELD_FRFM">
+                                                        <p>Percentage: 66.00%</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-react-beautiful-dnd-draggable="17"
+                                        class="sortable-item paragraph-container SortableItem-sibling">
+                                        <div id="PARAGRAPH_EDUC_660b32dc-337b-4ae4-8530-ae8d88c937fc"
+                                            class="paragraph PARAGRAPH_EDUC  ">
+                                            <div class="clearfix doc-item">
+                                                <div class="singlecolumn">
+                                                    <div><span class="dispBlock" dependency="GRYR|GRED|GRST|GRIP">
+                                                            <span class="jobdates" id="FIELD_GRST"
+                                                                format="%m/%Y"></span><span dependency="GRST+GRED"
+                                                                style="display: none;"> - </span><span class="jobdates"
+                                                                id="FIELD_GRED" format="%m/%Y"></span>
+                                                            <span dependency="GRED|GRST" style="display: none;"><span
+                                                                    dependency="GRIP"
+                                                                    style="display: none;">-</span></span>
+                                                            <span id="FIELD_GRIP"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="DGRE|STUY">
+                                                            <span class="degree txt-bold"
+                                                                id="FIELD_DGRE">S.S.C</span><span dependency="DGRE+STUY"
+                                                                style="display: none;"> </span><span
+                                                                class="programline txt-bold" id="FIELD_STUY"></span>
+                                                        </span>
+                                                        <span class="dispBlock" dependency="SCHO|SCIT|SSTA|SCNT|GRHN">
+                                                            <span class="companyname txt-bold" id="FIELD_SCHO">Shravan
+                                                                Vidya
+                                                                Bhavan School</span><span dependency="SCHO"><span
+                                                                    dependency="SCIT|SSTA|SCNT|GRHN"> -</span></span>
+                                                            <span class="joblocation jobcity"
+                                                                id="FIELD_SCIT">Ankleshwar,
+                                                                Gujarat - 2014</span><span dependency="SCIT+SSTA|SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobstate"
+                                                                id="FIELD_SSTA"></span><span dependency="SSTA+SCNT"
+                                                                style="display: none;">, </span><span
+                                                                class="joblocation jobcountry"
+                                                                id="FIELD_SCNT"></span><span
+                                                                dependency="SCIT|SSTA|SCNT"><span dependency="GRHN"
+                                                                    style="display: none;"> - </span></span>
+                                                            <span id="FIELD_GRHN"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="degreeGap" dependency="GRPA" style="display: none;">
+                                                        <span class="txt-bold xslt_static_change">GPA</span><span
+                                                            class="beforecolonspace"> </span><span>: </span><span
+                                                            id="FIELD_GRPA"></span>
+                                                    </div>
+                                                    <span id="FIELD_FRFM">
+                                                        <p>Percentage: 85.50%</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="doc-overlay para-overlay" style="left:-2px; right: -2px;"><span
+                                                    class="badge badge-primary badge-edit"></span><span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CONTAINER_PARENT_1" class="signContainerParent">
+            <div id="CONTAINER_2" class="signContainer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
